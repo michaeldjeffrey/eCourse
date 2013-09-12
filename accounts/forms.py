@@ -25,7 +25,6 @@ class UserProfileForm(forms.ModelForm):
 
     def save(self, *args, **kwargs):
         super(UserProfileForm, self).save(*args, **kwargs)
-        # self.instance.user.username = self.cleaned_data.get('username')
         self.instance.user.first_name = self.cleaned_data.get('first_name')
         self.instance.user.last_name = self.cleaned_data.get('last_name')
         self.instance.user.save()
