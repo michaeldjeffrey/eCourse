@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load custom_fields %}
+
+{% block content %}
+
+    {% if course.id %}
+        <h1>Edit Course {{ course }}</h1><a href="{% url 'course:delete' pk=course.id %}">Delete</a>
+    {% else %}
+        <h1>Add Course</h1>
+    {% endif %}
+    {% for non_field_error in form.non_field_errors %}
+        <div class="row">
+            <div class="col-lg-6 alert alert-danger">
+                {{ non_field_error }}
+            </div>
+        </div>
+    {% endfor %}
+    <form action="{{ action }}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-4">{{ form.title|as_crispy_field }}</div>
+            <div class="col-lg-4">{{ form.subject|as_crispy_field }}</div>
+            <div class="col-lg-4">{{ form.start_date|as_crispy_field }}</div>
+            <div class="col-lg-4">{{ form.end_date|as_crispy_field }}</div>
+            <div class="col-lg-4">{{ form.description|as_crispy_field }}</div>
+            <div class="col-lg-4">{{ form.image|image_field }}</div>
+            <div class="col-lg-4">{{ form.video|file_field }}</div>
+        </div>
+        {% for hidden_field in form.hidden_fields %}
+            {{ hidden_field }}
+        {% endfor %}
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+{#    {% if course.id %}#}
+{#        <a class="btn btn-primary" href="{% url 'course:lesson_edit' pk=course.id %}">Edit Lessons</a>#}
+{#    {% endif %}#}
+
+    <a href="{% url 'course:list' %}">back to list</a>
+
+{% endblock %}

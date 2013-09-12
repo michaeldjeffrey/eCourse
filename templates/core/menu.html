@@ -1,0 +1,57 @@
+<nav class="navbar navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'index' %}">E-Learning</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'course:list' %}">Courses</a></li>
+{#                <li class="dropdown">#}
+{#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b#}
+{#                            class="caret"></b></a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a href="#">Action</a></li>#}
+{#                        <li><a href="#">Another action</a></li>#}
+{#                        <li><a href="#">Something else here</a></li>#}
+{#                        <li><a href="#">Separated link</a></li>#}
+{#                        <li><a href="#">One more separated link</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'user:view' slug=user.username %}">My Profile</a></li>
+                    <li><a href="{% url 'auth_logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'registration_register' %}">Sign up</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <form action="{% url 'auth_login' %}" method="post">{% csrf_token %}
+                                <label for="id_username">
+                                <input class="form-control" value="" name="username" id="id_username" placeholder="Username" type="text">
+                                </label>
+                                <label for="id_password">
+                                <input class="form-control" value="" name="password" id="id_password" placeholder="Password" type="password">
+                                </label>
+                                <input type="submit" class="btn btn-primary" value="Log in">
+                            </form>
+                        </ul>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
