@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="span6">
+            <a class="btn btn-primary" href="{% url 'course:new' %}">New Course</a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+    {% for object in object_list %}
+        <div class="col-lg-4">
+            <div class="thumbnail">
+                {% if object.image %}
+                <img src="{{ object.image.url }}" alt="">
+                {% endif %}
+                <div class="caption">
+                    <h3>{{ object }} &emsp;<small>{{ object.subject }}</small></h3>
+                    <p>{{ object.description|truncatewords:20 }}</p>
+                    <p><a class="btn btn-primary" href="{{ object.get_absolute_url }}">View Class</a></p>
+                        {{ object.lesson_set.all|length }} lessons
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

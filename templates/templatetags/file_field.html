@@ -1,0 +1,16 @@
+<div class="fileupload fileupload-new" data-provides="fileupload">
+    <div class="input-group">
+        <div class="uneditable-input form-control">
+            <i class="icon-file fileupload-exists"></i>
+            <span class="fileupload-preview"></span>
+        </div>
+        <span class="input-group-btn">
+            <button class="btn btn-file btn-default" type="button">
+                <span class="fileupload-new">Select {{ field.label }}</span>
+                <span class="fileupload-exists">Change</span>
+                {{ field }}
+            </button>
+            <button class="btn btn-default fileupload-exists" data-dismiss="fileupload" type="button">Remove</button>
+        </span>
+    </div>
+</div>
