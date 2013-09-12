@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load custom_fields %}
+
+{% block content %}
+    <h2>Welcome to the lesson making page</h2>
+
+    <form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="row">
+        <div class="col-lg-6">
+    <h3>Lesson</h3>
+    {% for field in form %}
+        {{ field|as_crispy_field }}
+    {% endfor %}
+        </div>
+        <div class="col-lg-6">
+            <h3>References</h3>
+        {{ reference.management_form }}
+            <table class="table-striped table">
+                {% for fields in reference %}
+                    <tr>
+                        {% for field in fields %}
+                            <td>
+                                {{ field|as_crispy_field }}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+            <h3>Images</h3>
+{{ image.management_form }}
+            <table class="table-striped table">
+                {% for fields in image %}
+                    <tr>
+                        <td>{{ fields.image|image_field }}</td>
+                        <td>{{ fields.DELETE|as_crispy_field }}</td>
+                        <td>{{ fields.lesson }}</td>
+                        <td>{{ fields.id }}</td>
+
+                    </tr>
+                {% endfor %}
+            </table>
+            <h3>Videos</h3>
+        {{ video.management_form }}
+            <table class="table-striped table">
+                {% for fields in video %}
+                    <tr>
+                        <td>{{ fields.video|file_field }}</td>
+                        <td>{{ fields.DELETE|as_crispy_field }}</td>
+                        <td>{{ fields.lesson }}</td>
+                        <td>{{ fields.id }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+        <input type="submit" class="btn btn-primary">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+Are you sure you want to delete this Lesson?
+    <form action="{{ action }}" method="POST">
+    {% csrf_token %}
+        <input type="submit" value="Yes" class="btn btn-primary">
+        <a class="btn btn-primary" href="{% url 'lesson:list' %}">Cancel</a>
+    </form>
+{% endblock %}

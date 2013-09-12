@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block style_sheet %}
+    <style type="text/css">
+        form{
+            padding: 15px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {% if user.username %}
+        <h1>Welcome home {{ user }}</h1>
+    {% else %}
+        <h1>Welcome to eCourse</h1>
+    {% endif %}
+
+    <br>
+    <div class="row">
+        {% for object in courses %}
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="{{ object.image.url }}" alt="">
+
+                    <div class="caption">
+                        <h3>{{ object }} &emsp;<small>{{ object.subject }}</small>
+                        </h3>
+                        <p>{{ object.description|truncatewords:20 }}</p>
+
+                        <p><a class="btn btn-primary" href="{{ object.get_absolute_url }}">View
+                            Class</a></p>
+                        {{ object.lesson_set.all|length }} lessons
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

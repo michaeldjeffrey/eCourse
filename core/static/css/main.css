@@ -1,0 +1,24 @@
+/* TODO: target this better where is needs to be, this is a lazy rule Bad Michael */
+/*.thumbnail{*/
+    /*min-height: 300px;*/
+/*}*/
+/*.thumbnail img{*/
+    /*max-height: 100px;*/
+    /*display: block;*/
+    /*margin: auto;*/
+/*}*/
+/* Fix for lightbox until it can show the images at the right proportions */
+.lb-image {
+    max-width: inherit;
+}
+/* TODO: target this better on the home page, this is a lazy rule. */
+.col-lg-4{
+    margin-top: 10px;
+}
+/* style a div to look like a text box for fileupload */
+.uneditable-input{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    min-height: 2.4em;
+}

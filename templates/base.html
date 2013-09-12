@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en-US">
+<head>
+    <title>Online-Course</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-fileupload.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+    {% block style_sheet %} {% endblock %}
+</head>
+<body>
+{% include 'core/menu.html' %}
+
+<div class="container">
+{% block content %}
+
+  <h1>Bootstrap starter template</h1>
+  <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+{% endblock %}
+
+</div> <!-- /container -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap-fileupload.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lightbox-2.6.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
+{% block javascript %} {% endblock %}
+</body>
+</html>

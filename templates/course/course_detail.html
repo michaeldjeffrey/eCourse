@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ object.title }}
+        {% if object.teacher == user.userprofile %}
+        <a class="btn btn-primary" href="{% url 'lesson:new' %}">New Lesson</a>
+        {% elif object not in user.userprofile.courses.all %}
+            <a class="btn btn-primary" href="{% url 'course:enroll' pk=object.id %}">Enroll in Course</a>
+        {% else %}
+            <a class="btn btn-primary" href="{% url 'course:unenroll' pk=object.id %}">Stop Taking Course</a>
+        {% endif %}
+    </h1>
+    <p>Taught by: <a href="{{ object.teacher.get_absolute_url }}">{{ object.teacher }}</a></p>
+    <p>{{ object.description }}</p>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                {% for lesson in object.lesson_set.all %}
+                    <div class="col-lg-6" style="margin-bottom: 15px;">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>{{ lesson }} &emsp;
+                                    {% if object.teacher == user.userprofile %}
+                                    <small>
+                                        <a href="{% url 'lesson:delete' pk=lesson.id %}">delete</a>
+                                    </small>
+                                    {% endif %}
+                                </h3>
+                                <p>{{ lesson.description }}</p>
+
+                                <p><a class="btn btn-primary" href="{{ lesson.get_absolute_url }}">View
+                                    Lesson</a></p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h3>Course Video</h3>
+            {% if object.video %}
+            <video width="320" height="240" controls>
+                <source src="{{ object.video.url}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+
+<a class="btn" href="/course/whatever"></a>
+<a class="btn" href="{% url 'course:list' %}"></a>
