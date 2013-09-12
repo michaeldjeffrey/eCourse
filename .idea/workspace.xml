@@ -4,12 +4,12 @@
     <list default="true" id="b4a5015b-e77a-41d6-9593-f0f05c9df787" name="Default" comment="" />
     <ignored path="tutorial.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377144991355" ignored="false" />
+    <file path="/settings.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979290632" ignored="false" />
     <file path="/urls.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378977614848" ignored="false" />
-    <file path="/models.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377142972508" ignored="false" />
+    <file path="/models.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979512465" ignored="false" />
     <file path="/serializers.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1373681567998" ignored="false" />
     <file path="/views.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1376541086767" ignored="false" />
-    <file path="/a.dummy" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378977580418" ignored="false" />
+    <file path="/a.dummy" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979807705" ignored="false" />
     <file path="/tests.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374889027743" ignored="false" />
     <file path="/contact_list.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1373828447988" ignored="false" />
     <file path="/dummy.xml" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377146171228" ignored="false" />
@@ -28,7 +28,7 @@
     <file path="/edit_student.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374720149394" ignored="false" />
     <file path="/main.css" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377145197837" ignored="false" />
     <file path="/student_form.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1375326816378" ignored="false" />
-    <file path="/field.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374784788341" ignored="false" />
+    <file path="/field.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979620581" ignored="false" />
     <file path="/student_detail.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374889661521" ignored="false" />
     <file path="/student_confirm_delete.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374870342267" ignored="false" />
     <file path="/teacher_confirm_delete.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1374889622906" ignored="false" />
@@ -80,11 +80,28 @@
     <file path="/file_field.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377145965359" ignored="false" />
     <file path="/image_field.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377145497958" ignored="false" />
     <file path="/crispy_forms_filters.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377147245088" ignored="false" />
-    <file path="/crispy_forms_field.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377148179596" ignored="false" />
+    <file path="/crispy_forms_field.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378980605892" ignored="false" />
     <file path="/test_settings_bootstrap.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377146812819" ignored="false" />
     <file path="/baseinput.html" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377146925359" ignored="false" />
     <file path="/bootstrap.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1377147447551" ignored="false" />
     <file path="/.gitignore" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378978081871" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/contrib/auth/models.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/contrib/admin/sites.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/utils/importlib.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/utils/autoreload.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/template/defaulttags.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/db/models/fields/related.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/db/models/signals.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/db/models/query.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/db/models/loading.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/http/request.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/views/generic/edit.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270402" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/forms/forms.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/views/generic/base.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/forms/models.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/template/defaultfilters.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/views/generic/detail.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
+    <file path="$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/dispatch/dispatcher.py" changelist="b4a5015b-e77a-41d6-9593-f0f05c9df787" time="1378979270403" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,21 +121,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/urls.py">
+      <file leaf-file-name="crispy_forms_utils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="crispy_forms_tags.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="201" column="0" selection-start="6376" selection-end="6376" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="field.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templates/bootstrap/field.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="46" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.57251906">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crispy_forms_field.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_field.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="21" selection-start="1954" selection-end="1955" vertical-scroll-proportion="-15.8">
               <folding />
             </state>
           </provider>
@@ -134,15 +176,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/course/views.py" />
-        <option value="$PROJECT_DIR$/templates/course/course_form.html" />
-        <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/tests/test_settings_bootstrap.py" />
         <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templates/bootstrap/layout/baseinput.html" />
         <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_filters.py" />
         <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/bootstrap.py" />
-        <option value="$PROJECT_DIR$/core/settings.py" />
         <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/utils.py" />
-        <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_field.py" />
         <option value="$PROJECT_DIR$/templates/lesson/lesson_form.html" />
         <option value="$PROJECT_DIR$/templates/accounts/account_detail.html" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
@@ -150,6 +187,11 @@
         <option value="$PROJECT_DIR$/core/views.py" />
         <option value="$PROJECT_DIR$/core/urls.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_tags.py" />
+        <option value="$PROJECT_DIR$/core/settings.py" />
+        <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_field.py" />
+        <option value="$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templates/bootstrap/field.html" />
       </list>
     </option>
   </component>
@@ -371,7 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="registration" />
+              <option name="myItemId" value="crispy_forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,41 +435,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="registration" />
+              <option name="myItemId" value="crispy_forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backends" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 virtualenv at ~/test/env &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="registration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backends" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
+              <option name="myItemId" value="templatetags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,15 +461,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="registration" />
+              <option name="myItemId" value="crispy_forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backends" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.2 virtualenv at ~/test/env &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="crispy_forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,6 +660,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -889,7 +945,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32592592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32592592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2877984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,8 +954,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3425827" sideWeight="0.67407405" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33421752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3425827" sideWeight="0.6666667" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -972,92 +1028,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="29" selection-start="5677" selection-end="5677" vertical-scroll-proportion="0.22813688">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/registration/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.05703422">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/db/models/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="8" selection-start="5361" selection-end="5361" vertical-scroll-proportion="0.33285713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="49" selection-start="709" selection-end="709" vertical-scroll-proportion="0.34285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="24" selection-start="947" selection-end="947" vertical-scroll-proportion="0.33285713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.51428574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/registration/backends/default/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="6" selection-start="4353" selection-end="4353" vertical-scroll-proportion="0.33285713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/registration/backends/default/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.44285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="50" selection-start="649" selection-end="649" vertical-scroll-proportion="0.42159763">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.52428573">
-          <folding>
-            <element signature="e#24#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/registration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="17" selection-start="911" selection-end="911" vertical-scroll-proportion="0.71005917">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/registration/backends/simple/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="6" selection-start="274" selection-end="274" vertical-scroll-proportion="0.06428572">
@@ -1081,9 +1051,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="37" selection-start="2001" selection-end="2001" vertical-scroll-proportion="1.1357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="65" selection-start="402" selection-end="402" vertical-scroll-proportion="0.23285714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/account_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.021428572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templatetags/custom_fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3468208">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/bootstrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="260" column="38" selection-start="9092" selection-end="9092" vertical-scroll-proportion="4.6604047">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="0" selection-start="6376" selection-end="6376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templatetags/crispy_forms_field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="21" selection-start="1954" selection-end="1955" vertical-scroll-proportion="-15.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/crispy_forms/templates/bootstrap/field.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.57251906">
           <folding />
         </state>
       </provider>
