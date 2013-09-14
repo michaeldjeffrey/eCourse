@@ -13,7 +13,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', IndexView.as_view(), name='index'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^course/', include('course.urls', namespace='course')),
     url(r'^lesson/', include('lesson.urls', namespace='lesson')),
     url(r'^user/', include('accounts.urls', namespace='user')),
