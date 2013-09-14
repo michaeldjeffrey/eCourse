@@ -181,6 +181,8 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+
 AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 
 ACCOUNT_ACTIVATION_DAYS = 7
@@ -199,7 +201,7 @@ DEFAULT_FROM_EMAIL = 'testing@example.com'
 
 LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-BOOTSTRAP_TEMPLATETAGS_STYLE = 'bootstrap'
+BOOTSTRAP_TEMPLATETAGS_STYLE = 'bootstrap3'
 
