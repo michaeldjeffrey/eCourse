@@ -20,7 +20,7 @@ class Course(models.Model):
     end_date = models.DateField(default=datetime.now())
     description = models.TextField()
     teacher = models.ForeignKey(UserProfile)
-    image = models.ImageField(upload_to='image/course', blank=True, null=True)
+    image = models.ImageField(help_text='300 X 200 image', upload_to='image/course', blank=True, null=True)
     # URL for video of class lecture
     video = models.FileField(help_text='Intro video to the course', upload_to='video/course',
                              blank=True, null=True)
