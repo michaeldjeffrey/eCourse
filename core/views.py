@@ -40,7 +40,7 @@ def mylogin(request):
                 return HttpResponseRedirect('/')
             else:
                 # disabled account
-                return HttpResponseRedirect(reverse())
+                # return HttpResponseRedirect(reverse())
                 return direct_to_template(request, 'invalid_login.html')
 
 def mylogout(request):
