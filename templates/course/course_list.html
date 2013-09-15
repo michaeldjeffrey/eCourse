@@ -2,13 +2,16 @@
 
 {% block content %}
 
-    <div class="row">
-        <div class="span6">
-            <a class="btn btn-primary" href="{% url 'course:new' %}">New Course</a>
-        </div>
-    </div>
+    {% if user.is_staff %}
 
-    <br>
+        <div class="row">
+            <div class="span6">
+                <a class="btn btn-primary" href="{% url 'course:new' %}">New Course</a>
+            </div>
+        </div>
+
+        <br>
+    {% endif %}
 
     <div class="row">
     {% for object in object_list %}
