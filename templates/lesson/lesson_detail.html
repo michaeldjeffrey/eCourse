@@ -15,7 +15,7 @@
 
 
     <div class="row">
-        <div class="col-lg-6 well">
+        <div class="col-md-6 well">
             <h4>Videos</h4>
             <ul>
                 {% for video in object.video_set.all %}
@@ -28,9 +28,9 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <div class="row">
-                <div class="col-lg-12 well">
+                <div class="col-md-12 well">
                     <h4>References</h4>
                     <ul>
                         {% for reference in object.reference_set.all %}
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 well">
+                <div class="col-md-12 well">
                     <h4>Images</h4>
                     <ul>
                         {% for image in object.image_set.all %}

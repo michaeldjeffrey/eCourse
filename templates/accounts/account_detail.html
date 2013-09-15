@@ -13,27 +13,27 @@
 </h1>
     <p><a href="{% url 'user:edit' slug=user.username %}">Edit my profile</a> </p>
     <div class="row">
-        <div class="col-lg-3">Username: {{ object }}</div>
-        <div class="col-lg-3">Name: {{ object.first_name }} {{ object.last_name }}</div>
-        <div class="col-lg-3">Gender: {{ object.userprofile.get_gender }}</div>
+        <div class="col-md-3">Username: {{ object }}</div>
+        <div class="col-md-3">Name: {{ object.first_name }} {{ object.last_name }}</div>
+        <div class="col-md-3">Gender: {{ object.userprofile.get_gender_display|default:'-' }}</div>
     </div>
     <div class="row">
-        <div class="col-lg-3">Bio: {{ object.userprofile.bio }}</div>
-        <div class="col-lg-3">Courses enrolled in:
+        <div class="col-md-3">Bio: {{ object.userprofile.bio }}</div>
+        <div class="col-md-3">Courses enrolled in:
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12">
             {% for course in object.userprofile.courses.all %}
                 <a href="{{ course.get_absolute_url }}" class="media btn btn-default btn-block">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             <img class="media-object" src="{{ course.image.url }}" width="48" height="48">
                         </div>
-                        <div class="col-lg-10 text-left">
+                        <div class="col-md-10 text-left">
                             <h4>{{ course }}</h4>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <small class="text-muted">{{ course.description|truncatewords:8 }}</small>
                         </div>
                     </div>
@@ -43,21 +43,21 @@
         </div>
         </div>
     {% if object.is_staff %}
-        <div class="col-lg-3">Courses Teaching:
+        <div class="col-md-3">Courses Teaching:
             <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 {% for course in object.userprofile.course_set.all %}
                     <a class="media btn btn-default btn-block" href="{{ course.get_absolute_url }}">
                         <div class="row">
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <img class="media-object" src="{{ course.image.url }}" width="48" height="48">
                             </div>
-                            <div class="col-lg-10">
+                            <div class="col-md-10">
                                 <h4>{{ course }}</h4>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <small class="text-muted">{{ course.description|truncatewords:8 }}</small>
                             </div>
                         </div>

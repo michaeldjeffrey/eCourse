@@ -11,7 +11,7 @@
     {% endif %}
     {% for non_field_error in form.non_field_errors %}
         <div class="row">
-            <div class="col-lg-6 alert alert-danger">
+            <div class="col-md-6 alert alert-danger">
                 {{ non_field_error }}
             </div>
         </div>
@@ -19,25 +19,26 @@
     <form action="{{ action }}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
         <div class="row">
-            <div class="col-lg-4">{{ form.title|as_crispy_field }}</div>
-            <div class="col-lg-4">{{ form.subject|as_crispy_field }}</div>
-            <div class="col-lg-4">{{ form.start_date|as_crispy_field }}</div>
-            <div class="col-lg-4">{{ form.end_date|as_crispy_field }}</div>
-            <div class="col-lg-4">{{ form.description|as_crispy_field }}</div>
-            <div class="col-lg-4">{{ form.image|image_field }}</div>
-            <div class="col-lg-4">{{ form.video|file_field }}</div>
+            <div class="col-md-4">{{ form.title|as_crispy_field }}</div>
+            <div class="col-md-4">{{ form.subject|as_crispy_field }}</div>
+            <div class="col-md-4">{{ form.start_date|as_crispy_field }}</div>
+            <div class="col-md-4">{{ form.end_date|as_crispy_field }}</div>
+            <div class="col-md-4">{{ form.description|as_crispy_field }}</div>
+            <div class="col-md-4">{{ form.image|image_field }}</div>
+            <div class="col-md-4">{{ form.video|file_field }}</div>
         </div>
         {% for hidden_field in form.hidden_fields %}
             {{ hidden_field }}
         {% endfor %}
-
-    <input class="btn btn-primary" type="submit" value="Submit">
+        <div class="form-actions">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <a class="btn btn-default" href="{% url 'course:list' %}">Cancel</a>
+        </div>
     </form>
 
 {#    {% if course.id %}#}
 {#        <a class="btn btn-primary" href="{% url 'course:lesson_edit' pk=course.id %}">Edit Lessons</a>#}
 {#    {% endif %}#}
 
-    <a href="{% url 'course:list' %}">back to list</a>
 
 {% endblock %}
