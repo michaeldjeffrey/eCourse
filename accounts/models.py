@@ -34,12 +34,6 @@ class UserProfile(models.Model):
     def get_absolute_url(self):
         return reverse('user:view', kwargs={'slug': self.user.username})
 
-    def get_gender(self):
-        if self.gender == 'm':
-            return 'Male'
-        else:
-            return 'Female'
-
     def enroll_in_course(self, course):
         self.courses.add(course)
 

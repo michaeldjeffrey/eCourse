@@ -1,10 +1,16 @@
 # Create your views here.
-from django.views.generic import DetailView, UpdateView
+from django.views.generic import DetailView, UpdateView, ListView
 from django.contrib.auth.models import User
 from models import UserProfile
 from forms import UserProfileForm
 from django.contrib.auth import get_user_model
 from django.core.urlresolvers import reverse, reverse_lazy
+
+
+class ListAccountView(ListView):
+    model = UserProfile
+    template_name = 'accounts/account_list.html'
+
 
 class AccountDetailView(DetailView):
     model = get_user_model()

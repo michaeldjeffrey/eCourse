@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-stiped table-bordered">
+                <thead>
+                    <th>Username</th>
+                    <th>Name</th>
+                    <th>website</th>
+                    <th>Teacher</th>
+                </thead>
+                <tbody>
+                    {% for object in object_list %}
+                        <tr>
+                            <td><a href="{{ object.get_absolute_url }}">{{ object.user.username }}</a></td>
+                            <td>{{ object }}</td>
+                            <td>{{ object.website }}</td>
+                            <td>{{ object.user.is_staff|yesno:'Yes,No' }}</td>
+                        </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
