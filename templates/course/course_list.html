@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+{% for field in user %}
+	{{ field }}
+{% endfor %}
     <div class="row">
         <div class="span6">
             <a class="btn btn-primary" href="{% url 'course:new' %}">New Course</a>
