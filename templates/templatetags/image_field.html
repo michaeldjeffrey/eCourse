@@ -1,12 +1,25 @@
-<div class="fileupload fileupload-new" data-provides="fileupload">
+{% load crispy_forms_field %}
+
+<div class="fileupload fileupload-{% if field.value or field.initial %}exists{% else %}new{% endif %}" data-provides="fileupload">
     <div class="fileupload-new thumbnail" style="width: 50px; height: 50px;">
         <img src="http://www.placehold.it/50x50/EFEFEF/AAAAAA"/>
     </div>
-    <div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;"></div>
+    <div class="fileupload-preview fileupload-exists thumbnail" style="width: 50px; height: 50px;">
+        {% if field.value %}
+            <img src="{{ field.value.url }}" alt="">
+        {% elif field.initial.image %}
+            <img src="{{ field.initial.image.url }}" alt="">
+        {% endif %}
+
+    </div>
     <span class="btn btn-file btn-default">
         <span class="fileupload-new">Select image</span>
         <span class="fileupload-exists">Change</span>
-        {{ field }}
+        {% if forloop %}
+            <input class="clearablefileinput" id="id_image_set-{{ forloop.counter0 }}-image" name="image_set-{{ forloop.counter0 }}-image" type="file">
+        {% else %}
+            <input class="clearablefileinput" id="id_image" name="image" type="file">
+        {% endif %}
     </span>
     <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
 </div>
