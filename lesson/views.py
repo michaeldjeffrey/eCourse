@@ -22,7 +22,6 @@ class UpdateLessonView(UpdateView):
     def get_success_url(self):
         return reverse('lesson:list')
 
-
     def get_context_data(self, **kwargs):
         context = super(UpdateLessonView, self).get_context_data(**kwargs)
         context['action'] = reverse('lesson:edit', kwargs={'pk': self.get_object().id})
