@@ -15,10 +15,58 @@ class ListLessonView(AuthenticationMixin, ListView):
     model = Lesson
 
 
+class UpdateLessonView(UpdateView):
+    model = Lesson
+    form_class = LessonForm
+
+    def get_success_url(self):
+        return reverse('lesson:list')
+
+
+    def get_context_data(self, **kwargs):
+        context = super(UpdateLessonView, self).get_context_data(**kwargs)
+        context['action'] = reverse('lesson:edit', kwargs={'pk': self.get_object().id})
+        instance = None
+        if self.request.POST:
+            context['form'] = LessonForm(self.request.POST, instance=self.object)
+            context['image'] = ImageInlineFormset(self.request.POST, self.request.FILES,instance=self.object)
+            context['video'] = VideoInlineFormset(self.request.POST, self.request.FILES,instance=self.object)
+            context['reference'] = ReferenceInlineFormset(self.request.POST, instance=self.object)
+        else:
+            context['form'] = LessonForm(instance=self.object)
+            context['image'] = ImageInlineFormset(instance=self.object)
+            context['video'] = VideoInlineFormset(instance=self.object)
+            context['reference'] = ReferenceInlineFormset(instance=self.object)
+        return context
+
+    def form_valid(self, form):
+        context = self.get_context_data()
+        form = context['form']
+        image = context['image']
+        video = context['video']
+        reference = context['reference']
+        if form.is_valid():
+            self.object = form.save()
+            if reference.is_valid() and image.is_valid() and video.is_valid():
+                reference.instance = self.object
+                reference.save()
+                image.instance = self.object
+                image.save()
+                video.instance = self.object
+                video.save()
+            return redirect(self.object.course.get_absolute_url())
+        else:
+            return self.render_to_response(self.get_context_data(form=form))
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(form=form))
+
+
 class CreateLessonView(AuthenticationMixin, CreateView):
     """ Create a new Contact. """
     model = Lesson
     form_class = LessonForm
+    success_url = '/course/'
 
     def get_success_url(self):
         return reverse('lesson:list')
@@ -53,7 +101,7 @@ class CreateLessonView(AuthenticationMixin, CreateView):
                 image.save()
                 video.instance = self.object
                 video.save()
-            return redirect(self.object.get_absolute_url())
+            return redirect(self.object.course.get_absolute_url())
         else:
             return self.render_to_response(self.get_context_data(form=form))
 
