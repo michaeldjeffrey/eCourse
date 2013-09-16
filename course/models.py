@@ -12,7 +12,7 @@ class Course(models.Model):
     Has many students.
     Has many lessons.
     """
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=200)
     subject = models.CharField(max_length=20, choices=CLASS_SUBJECTS)
     description = models.CharField(max_length=20)
     date_created = models.DateTimeField(auto_now_add=True)

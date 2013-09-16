@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse
 # Create your models here.
 class Lesson(models.Model):
     course = models.ForeignKey(Course)
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     start_date = models.DateField(default=datetime.now())
     due_date = models.DateField(blank=True, null=True)
