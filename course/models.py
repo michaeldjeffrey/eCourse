@@ -14,7 +14,7 @@ class Course(models.Model):
     """
     title = models.CharField(max_length=200)
     subject = models.CharField(max_length=20, choices=CLASS_SUBJECTS)
-    description = models.CharField(max_length=20)
+    description = models.CharField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)
     start_date = models.DateField(default=datetime.now())
     end_date = models.DateField(default=datetime.now())
