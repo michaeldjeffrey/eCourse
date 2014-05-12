@@ -16,7 +16,7 @@ class CourseForm(forms.ModelForm):
 
     class Meta:
         model = Course
-        exclude = 'teacher'
+        exclude = ('teacher',)
 
     def clean(self):
         return self.cleaned_data

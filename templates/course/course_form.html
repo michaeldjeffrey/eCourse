@@ -5,7 +5,7 @@
 {% block content %}
 
     {% if course.id %}
-        <h1>Edit Course {{ course }}</h1><a href="{% url 'course:delete' pk=course.id %}">Delete</a>
+        <h1>Edit Course {{ course }}&emsp;<a class='btn btn-default' href="{% url 'course:delete' pk=course.id %}">Delete</a></h1>
     {% else %}
         <h1>Add Course</h1>
     {% endif %}

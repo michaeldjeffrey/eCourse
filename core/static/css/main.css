@@ -17,3 +17,9 @@
     background: #eee;
     padding: 20px;
 }
+.thumbnail{
+	text-align: center;
+}
+.thumbnail .caption{
+	text-align: left;
+}
